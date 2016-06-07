@@ -7,7 +7,7 @@ public:
             int i=floor(log2(j));
             if (j - pow(2, i) == 0){
                 resultVector.push_back(1);
-                cout << 1 + resultVector[j - pow(2, i)] << ' ';
+                //cout << 1 + resultVector[j - pow(2, i)] << ' ';
                 continue;
             }
             //cout << 1 + resultVector[j - pow(2, i)] << ' ';
