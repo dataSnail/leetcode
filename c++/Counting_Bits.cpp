@@ -10,7 +10,7 @@ public:
                 cout << 1 + resultVector[j - pow(2, i)] << ' ';
                 continue;
             }
-            cout << 1 + resultVector[j - pow(2, i)] << ' ';
+            //cout << 1 + resultVector[j - pow(2, i)] << ' ';
             resultVector.push_back(1 + resultVector[j - pow(2, i)]);
         }
         return resultVector;
