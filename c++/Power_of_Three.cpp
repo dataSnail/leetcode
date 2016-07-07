@@ -1,12 +1,10 @@
-#include <iostream>
-#include <cmath>
-
-using namespace std;
-int main(){
-	int a = log2(243)/log2(3);
-	cout<<a<<endl;
-	cout<<a<<" "<<(int)(a*10)<<endl;
-    if(a-(int)a<=1e-5) cout<<"true";
-    else cout<<"false";
-	return 0;
-}
+class Solution {
+public:
+    bool isPowerOfThree(int n) {
+        if(n<=0) return false;
+        if(n==1) return true;
+        int a = log2(n)/log2(3);
+        if(n-pow(3,a)==0) return true;
+        else return false;
+    }
+};
